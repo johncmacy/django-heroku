@@ -32,11 +32,12 @@ This is a basic Django project that includes:
 1. In the terminal, run `py -m venv env` to set up a virtual environment named "env".
 2. Activate the virtual environment with `env/scripts/activate`.
 3. Run `py -m pip install -r requirements.txt`.
-4. Configure database settings from Heroku config vars.
-5. Run `py manage.py migrate` to initialize the database tables.
-6. Create a superuser record for yourself by running `py manage.py createsuperuser`, and follow the prompts for username, email, and password.
-7. Run the server (with `py manage.py runserver`, or F5 once you've set up a "launch.json" file).
-8. Navigate to http://127.0.0.1:8000/ to verify that it is working. You should see a welcome page, with links for Home, Profile, and Admin in the navbar.
+4. Add the app's url to settings.ALLOWED_HOSTS.
+5. Configure database settings from Heroku config vars.
+6. Run `py manage.py migrate` to initialize the database tables.
+7. Create a superuser record for yourself by running `py manage.py createsuperuser`, and follow the prompts for username, email, and password.
+8. Run the server (with `py manage.py runserver`, or F5 once you've set up a "launch.json" file).
+9. Navigate to http://127.0.0.1:8000/ to verify that it is working. You should see a welcome page, with links for Home, Profile, and Admin in the navbar.
 
 ### Push to Heroku
 1. In your Heroku dashboard, click the **Deploy** tab, then connect to your project's GitHub repo in the **Deployment method** section.
