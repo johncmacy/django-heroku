@@ -31,8 +31,8 @@ This is a basic Django project that includes:
 
 1. In the terminal, run `py -m venv env` to set up a virtual environment named "env".
 2. Activate the virtual environment with `env/scripts/activate`.
-3. Run `py -m pip install requirements.txt`.
-4. Create a new "db.sqlite3" file.
+3. Run `py -m pip install -r requirements.txt`.
+4. Configure database settings from Heroku config vars.
 5. Run `py manage.py migrate` to initialize the database tables.
 6. Create a superuser record for yourself by running `py manage.py createsuperuser`, and follow the prompts for username, email, and password.
 7. Run the server (with `py manage.py runserver`, or F5 once you've set up a "launch.json" file).
